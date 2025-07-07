@@ -1,0 +1,632 @@
+/* Google Verification Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.google-verification-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+.gv-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5vw;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    height: 80px;
+    width: auto;
+}
+
+.header-logo-text {
+    height: 60px;
+    width: auto;
+}
+
+/* Hero Banner Section */
+.gv-hero-banner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 900px;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    overflow: hidden;
+    padding: 140px 5vw 60px;
+    box-sizing: border-box;
+}
+
+.banner-bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+    z-index: 1;
+}
+
+.banner-watermark {
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 700px !important;
+    margin-top: 150px;
+    height: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.banner-content {
+    flex: 0.4;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 3;
+    text-align: right;
+    padding: 2rem;
+    margin-left: auto;
+    margin-top: -50px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+    margin-left: 50px;
+    color: #333;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.banner-cta {
+    background: #F26A3E;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    border-radius: 2em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    animation: bannerBlink 1.2s ease-in-out infinite;
+}
+
+.banner-cta:hover {
+    background: #d35400;
+}
+
+@keyframes bannerBlink {
+    0%, 100% { background-color: #F26A3E; }
+    50% { background-color: #d35400; }
+}
+
+/* Help Section */
+.help-section {
+    padding: 80px 5vw;
+    background: #f8f9fa;
+}
+
+.help-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.help-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.help-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.help-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+}
+
+.help-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #F26A3E;
+}
+
+.help-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 5vw;
+    background: white;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F26A3E;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* Rates Section */
+.rates-section {
+    padding: 80px 5vw;
+    background: white;
+}
+
+.rates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rates-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.rates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.rate-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid #F26A3E;
+}
+
+.rate-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rate-item p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F26A3E;
+}
+
+/* How Zepto Works Section */
+.how-zepto-works-section {
+    padding: 80px 5vw;
+    background: #f8f9fa;
+}
+
+.how-zepto-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-zepto-works-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.work-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+}
+
+.work-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #F26A3E;
+}
+
+.work-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Simple Speedy Section */
+.simple-speedy-section {
+    padding: 80px 5vw;
+    background: white;
+}
+
+.simple-speedy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.simple-speedy-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.simple-speedy-container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #F26A3E;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Terms Section */
+.terms-section {
+    padding: 80px 5vw;
+    background: #f8f9fa;
+}
+
+.terms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.terms-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.terms-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.terms-content p {
+    margin-bottom: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.terms-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    color: #333;
+}
+
+.terms-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.terms-content li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.terms-content strong {
+    color: #F26A3E;
+}
+
+
+
+/* Footer */
+.gv-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 5vw;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.footer-logo-text {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.footer-contact h4,
+.footer-legal h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #F26A3E;
+}
+
+.footer-contact p,
+.footer-legal p {
+    margin: 0.5rem 0;
+    color: #bdc3c7;
+    font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .gv-hero-banner {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 100px 2rem 4rem;
+        min-height: auto;
+    }
+
+    .banner-bg {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 2rem;
+        order: 1;
+    }
+
+    .banner-watermark {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: auto;
+        opacity: 0.3;
+        margin-left: 0 !important;
+    }
+
+    .banner-content {
+        flex: none;
+        margin: 0;
+        max-width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 3;
+        order: 2;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-left: 0;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .banner-cta {
+        font-size: 1rem;
+        padding: 0.7em 1.5em;
+    }
+
+
+
+    .help-container h2,
+    .rates-container h2,
+    .how-zepto-works-container h2,
+    .simple-speedy-container h2,
+    .terms-container h2 {
+        font-size: 2rem;
+    }
+
+    .help-grid,
+    .works-grid,
+    .features-grid,
+    .rates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gv-header {
+        padding: 1rem 2rem;
+    }
+
+    .header-logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .header-logo-text {
+        height: 45px;
+        width: auto;
+    }
+
+    .footer-logo-img {
+        height: 60px;
+        width: auto;
+    }
+
+    .footer-logo-text {
+        height: 45px;
+        width: auto;
+    }
+
+    .gv-hero-banner,
+    .help-section,
+    .stats-section,
+    .rates-section,
+    .how-zepto-works-section,
+    .simple-speedy-section,
+    .terms-section {
+        padding: 60px 2rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .help-container h2,
+    .rates-container h2,
+    .how-zepto-works-container h2,
+    .simple-speedy-container h2,
+    .terms-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-section {
+        padding: 1.5rem;
+    }
+
+    .help-card,
+    .work-card,
+    .feature-card,
+    .rate-item {
+        padding: 1.5rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+} 

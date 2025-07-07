@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepto - Money in Minutes. Magic in Moments.</title>
+    <meta name="description" content="Get instant personal loans from ₹10,000 to ₹5,00,000. APR 35% fixed. Quick approval, flexible terms, and secure process. Apply now at Zepto. Naman Finlease Private Limited.">
+    <meta name="keywords" content="personal loan, instant loan, quick cash, online loan, Zepto, money loan, APR 35%, Naman Finlease, salary loan, emergency loan">
+    <meta name="author" content="Naman Finlease Private Limited">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Zepto - Money in Minutes. Magic in Moments.">
+    <meta property="og:description" content="Get instant personal loans from ₹10,000 to ₹5,00,000. APR 35% fixed. Quick approval, flexible terms, and secure process.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zepto.com">
+    <link rel="canonical" href="https://zepto.com">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Zepto",
+        "description": "Get instant personal loans from ₹10,000 to ₹5,00,000. APR 35% fixed. Quick approval, flexible terms, and secure process.",
+        "url": "https://zepto.com",
+        "logo": "https://zepto.com/src/images/main_logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "India"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "1800-123-4567",
+            "contactType": "customer service",
+            "email": "support@zepto.com"
+        },
+        "sameAs": [
+            "https://zepto.com"
+        ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5vw;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            height: 80px;
+            width: auto;
+        }
+
+        .header-logo-text {
+            height: 60px;
+            width: auto;
+        }
+
+        /* Hero Banner Section */
+        .hero-banner {
+            position: relative;
+            display: flex;
+            width: 100%;
+            min-height: 900px;
+            background: #fff;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+            overflow: hidden;
+            padding: 140px 5vw 60px;
+            box-sizing: border-box;
+        }
+
+        .banner-bg {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 70%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left;
+            z-index: 1;
+        }
+
+        .banner-watermark {
+            position: absolute;
+            left: 70%;
+            transform: translateX(-50%);
+            width: 700px !important;
+            margin-top: 150px;
+            height: auto;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .banner-content {
+            flex: 0.4;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            z-index: 3;
+            text-align: right;
+            padding: 2rem;
+            margin-left: auto;
+            margin-top: -50px;
+        }
+
+        .banner-content h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-family: 'Georgia', serif;
+            margin-left: 50px;
+            color: #333;
+        }
+
+        .banner-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .banner-cta {
+            background: #F26A3E;
+            color: #fff;
+            border: none;
+            padding: 0.8em 2em;
+            border-radius: 2em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            animation: bannerBlink 1.2s ease-in-out infinite;
+        }
+
+        .banner-cta:hover {
+            background: #d35400;
+        }
+
+        @keyframes bannerBlink {
+            0%, 100% { background-color: #F26A3E; }
+            50% { background-color: #d35400; }
+        }
+
+        /* Help Section */
+        .help-section {
+            padding: 80px 5vw;
+            background: #f8f9fa;
+        }
+
+        .help-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .help-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .help-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .help-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .help-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #F26A3E;
+        }
+
+        .help-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 60px 5vw;
+            background: white;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #F26A3E;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 80px 5vw;
+            background: white;
+        }
+
+        .info-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .info-left h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .info-right h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #F26A3E;
+        }
+
+        .info-right ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-right li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .info-right li:before {
+            content: "✓";
+            color: #F26A3E;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 5vw;
+            background: #f8f9fa;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .features-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* How It Works Section */
+        .how-it-works-section {
+            padding: 80px 5vw;
+            background: white;
+        }
+
+        .how-it-works-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .how-it-works-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #F26A3E;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+        }
+
+        .step-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .step-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Rates and Fees Section */
+        .rates-section {
+            padding: 80px 5vw;
+            background: #f8f9fa;
+        }
+
+        .rates-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rates-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .rates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .rate-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #F26A3E;
+        }
+
+        .rate-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .rate-item p {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #F26A3E;
+        }
+
+        /* How Zepto Works Section */
+        .how-zepto-works-section {
+            padding: 80px 5vw;
+            background: white;
+        }
+
+        .how-zepto-works-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .how-zepto-works-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .work-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .work-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #F26A3E;
+        }
+
+        .work-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Simple Speedy Section */
+        .simple-speedy-section {
+            padding: 80px 5vw;
+            background: #f8f9fa;
+        }
+
+        .simple-speedy-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .simple-speedy-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .simple-speedy-container > p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #F26A3E;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Terms Section */
+        .terms-section {
+            padding: 80px 5vw;
+            background: white;
+        }
+
+        .terms-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .terms-container h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .terms-content {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms-content p {
+            margin-bottom: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .terms-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: #333;
+        }
+
+        .terms-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .terms-content li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .terms-content strong {
+            color: #F26A3E;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 5vw;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo-img {
+            height: 80px;
+            width: auto;
+        }
+
+        .footer-logo-text {
+            height: 60px;
+            width: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-contact h4,
+        .footer-legal h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #F26A3E;
+        }
+
+        .footer-contact p,
+        .footer-legal p {
+            margin: 0.5rem 0;
+            color: #bdc3c7;
+            font-size: 0.95rem;
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 1024px) {
+            .hero-banner {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 120px 3rem 4rem;
+                min-height: auto;
+            }
+
+            .banner-bg {
+                position: relative;
+                width: 85%;
+                height: 350px;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: 2rem;
+                order: 1;
+            }
+
+            .banner-watermark {
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 250px;
+                height: auto;
+                opacity: 0.3;
+                margin-left: 0 !important;
+            }
+
+            .banner-content {
+                flex: none;
+                margin: 0;
+                max-width: 100%;
+                padding: 0 2rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 3;
+                order: 2;
+            }
+
+            .banner-content h1 {
+                font-size: 2.5rem;
+                line-height: 1.3;
+                margin-left: 0;
+            }
+
+            .banner-content p {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .banner-cta {
+                font-size: 1.1rem;
+                padding: 0.8em 1.8em;
+            }
+
+            .help-container h2,
+            .info-left h2,
+            .features-container h2,
+            .how-it-works-container h2,
+            .how-zepto-works-container h2,
+            .simple-speedy-container h2,
+            .terms-container h2 {
+                font-size: 2.2rem;
+            }
+
+            .help-grid,
+            .works-grid,
+            .features-grid,
+            .rates-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .hero-banner {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 100px 2rem 4rem;
+                min-height: auto;
+            }
+
+            .banner-bg {
+                position: relative;
+                width: 90%;
+                height: 300px;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: 2rem;
+                order: 1;
+            }
+
+            .banner-watermark {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                height: auto;
+                opacity: 0.3;
+                margin-left: 0 !important;
+            }
+
+            .banner-content {
+                flex: none;
+                margin: 0;
+                max-width: 100%;
+                padding: 0 1rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 3;
+                order: 2;
+            }
+
+            .banner-content h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                margin-left: 0;
+            }
+
+            .banner-content p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .banner-cta {
+                font-size: 1rem;
+                padding: 0.7em 1.5em;
+            }
+
+            .info-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .help-container h2,
+            .info-left h2,
+            .features-container h2,
+            .how-it-works-container h2,
+            .how-zepto-works-container h2,
+            .simple-speedy-container h2,
+            .terms-container h2 {
+                font-size: 2rem;
+            }
+
+            .help-grid,
+            .works-grid,
+            .features-grid,
+            .rates-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-logo {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 1rem 2rem;
+            }
+
+            .header-logo {
+                height: 60px;
+                width: auto;
+            }
+
+            .header-logo-text {
+                height: 45px;
+                width: auto;
+            }
+
+            .footer-logo-img {
+                height: 60px;
+                width: auto;
+            }
+
+            .footer-logo-text {
+                height: 45px;
+                width: auto;
+            }
+
+            .hero-banner,
+            .help-section,
+            .stats-section,
+            .info-section,
+            .features-section,
+            .how-it-works-section,
+            .how-zepto-works-section,
+            .simple-speedy-section,
+            .terms-section {
+                padding: 60px 2rem;
+            }
+
+            .banner-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .help-container h2,
+            .info-left h2,
+            .features-container h2,
+            .how-it-works-container h2,
+            .how-zepto-works-container h2,
+            .simple-speedy-container h2,
+            .terms-container h2 {
+                font-size: 1.8rem;
+            }
+
+            .help-card,
+            .work-card,
+            .feature-card,
+            .rate-item {
+                padding: 1.5rem;
+            }
+
+            .stat-item h3 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Small Mobile Responsive */
+        @media (max-width: 600px) {
+            .hero-banner {
+                padding: 80px 1.5rem 3rem;
+            }
+
+            .banner-bg {
+                width: 95%;
+                height: 250px;
+            }
+
+            .banner-watermark {
+                width: 150px;
+                bottom: 20px;
+            }
+
+            .banner-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .banner-content p {
+                font-size: 0.95rem;
+            }
+
+            .banner-cta {
+                font-size: 0.95rem;
+                padding: 0.6em 1.3em;
+            }
+
+            .help-container h2,
+            .info-left h2,
+            .features-container h2,
+            .how-it-works-container h2,
+            .how-zepto-works-container h2,
+            .simple-speedy-container h2,
+            .terms-container h2 {
+                font-size: 1.8rem;
+            }
+
+            .help-section,
+            .stats-section,
+            .info-section,
+            .features-section,
+            .how-it-works-section,
+            .how-zepto-works-section,
+            .simple-speedy-section,
+            .terms-section {
+                padding: 50px 1.5rem;
+            }
+
+            .help-card,
+            .work-card,
+            .feature-card,
+            .rate-item {
+                padding: 1.2rem;
+            }
+
+            .stat-item h3 {
+                font-size: 2rem;
+            }
+
+            .stat-item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="src/images/main_logo.png" alt="Zepto Logo" class="header-logo">
+            <img src="src/images/main_logo_text.png" alt="Zepto" class="header-logo-text">
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <img src="src/images/home_banner.png" alt="Banner" class="banner-bg">
+        <img src="src/images/main_logo.png" alt="Watermark Logo" class="banner-watermark">
+        <div class="banner-content">
+            <h1>Money in Minutes. Magic in Moments.</h1>
+            <p>Dream big. We've got your back.</p>
+            <button class="banner-cta">Apply Now</button>
+        </div>
+    </section>
+
+    <!-- Here's How We Help You Win Section -->
+    <section class="help-section">
+        <div class="help-container">
+            <h2>Here's How We Help You Win</h2>
+            <p class="help-subtitle">From surprise bills to celebration thrills, Zepto is your go-to buddy for every money moment.</p>
+            
+            <div class="help-grid">
+                <div class="help-card">
+                    <h3>Party Now, Pay Later</h3>
+                    <p>Your Wallet's Best Backup Plan</p>
+                    <p>Cash, Fast & Hassle Free</p>
+                    <p>Birthday? Big move? Dream vacation? Get the funds to make every moment count.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>Simplify Your Loans Like a Pro</h3>
+                    <p>Manage everything in one smooth move</p>
+                    <p>Your Smart Loan Sidekick</p>
+                    <p>Because "easy, speedy, and secure" isn't just talk—it's our thing.</p>
+                </div>
+                
+                <div class="help-card">
+                    <h3>From lightning-fast approvals to support that actually supports, everything we do is made for your convenience.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>₹160M+</h3>
+                <p>disbursed</p>
+            </div>
+            <div class="stat-item">
+                <h3>7M+</h3>
+                <p>happy users</p>
+            </div>
+            <div class="stat-item">
+                <h3>40+</h3>
+                <p>cities served and growing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-left">
+                <h2>Here's How We've Got Your Back</h2>
+            </div>
+            <div class="info-right">
+                <h3>Money Talk</h3>
+                <ul>
+                    <li>Borrow from ₹10,000 to ₹5,00,000</li>
+                    <li>Tenure: 12 to 36 months</li>
+                    <li>Zero pre-closure or prepayment drama</li>
+                    <li>APR (aka boring bank speak): 35% (Fixed)</li>
+                    <li>Your monthly salary should be at least ₹40,000</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <h2>Why Choose Zepto?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Approval</h3>
+                    <p>Get approved in minutes, not days. Our smart algorithms work 24/7.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Safe</h3>
+                    <p>Bank-level security with end-to-end encryption for your data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Flexible Terms</h3>
+                    <p>Choose your loan amount and tenure that fits your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Digital First</h3>
+                    <p>Complete your application from anywhere, anytime on your phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="how-it-works-container">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Apply Online</h3>
+                    <p>Fill out our simple application form with your basic details.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Get Verified</h3>
+                    <p>Complete KYC verification with your PAN and Aadhaar.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Upload Documents</h3>
+                    <p>Upload your salary slips and bank statements.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Money in Bank</h3>
+                    <p>Get instant approval and money transferred to your account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rates and Fees Section -->
+    <section class="rates-section">
+        <div class="rates-container">
+            <h2>Rates and Fees</h2>
+            <div class="rates-grid">
+                <div class="rate-item">
+                    <h4>Monthly Interest Rate</h4>
+                    <p>2.9166%</p>
+                </div>
+                <div class="rate-item">
+                    <h4>Offered Annual Percentage Rate (APR)</h4>
+                    <p>35% (Fixed)</p>
+                </div>
+                <div class="rate-item">
+                    <h4>Tenure/Repayment Period</h4>
+                    <p>1 - 3 Years</p>
+                </div>
+                <div class="rate-item">
+                    <h4>Minimum-Maximum Loan Amount</h4>
+                    <p>INR 10,000 - 5,00,000</p>
+                </div>
+                <div class="rate-item">
+                    <h4>Processing Fee</h4>
+                    <p>2%</p>
+                </div>
+                <div class="rate-item">
+                    <h4>GST on Processing Fee (Exclusive)</h4>
+                    <p>18%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Zepto Works Section -->
+    <section class="how-zepto-works-section">
+        <div class="how-zepto-works-container">
+            <h2>How Zepto Works</h2>
+            <p class="section-subtitle">Quick, Simple, Sorted</p>
+            
+            <div class="works-grid">
+                <div class="work-card">
+                    <h3>Quick Start, No Drama</h3>
+                    <p>We only ask for your Aadhaar, PAN, and bank details. No boring forms. No paperwork jungle. Just you and your phone.</p>
+                </div>
+                
+                <div class="work-card">
+                    <h3>Before Your Chai Cools</h3>
+                    <p>Seriously. Your loan is processed and credited instantly. It is that seamless.</p>
+                </div>
+                
+                <div class="work-card">
+                    <h3>You're Pre-approved Before You Blink</h3>
+                    <p>We run lightning-fast eligibility checks. No queues. No calls. No waiting around.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Speedy Section -->
+    <section class="simple-speedy-section">
+        <div class="simple-speedy-container">
+            <h2>Simple. Speedy. Zepto.</h2>
+            <p>That's how we roll smooth, smart, and lightning fast.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>No Credit Score? Who Cares!</h3>
+                    <p>New to loans? No sweat. Zepto checks your vibes and potential not your financial past.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>+ Boom! You're Approved</h3>
+                    <p>Apply in minutes. Get the green light in seconds.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Repay Like a Boss</h3>
+                    <p>Pick EMIs that match your life — online, offline, anytime, anywhere.</p>
+                    <p>Because flexibility is the real flex.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Section -->
+    <section class="terms-section">
+        <div class="terms-container">
+            <h2>Terms and Conditions</h2>
+            <div class="terms-content">
+                <p>Welcome to the Salarywalle website, operated by Naman Finlease Private Limited ("we", "us", "our"). By accessing or using our website ("Site") and services ("Services"), you agree to be bound by the following terms and conditions.</p>
+                
+                <h3>Key Terms:</h3>
+                <ul>
+                    <li>All loans are subject to approval and verification</li>
+                    <li>APR of 35% applies to all approved loans</li>
+                    <li>Processing fee of 2% + 18% GST is applicable</li>
+                    <li>Minimum loan amount: ₹10,000</li>
+                    <li>Maximum loan amount: ₹5,00,000</li>
+                    <li>Tenure: 12 to 36 months</li>
+                    <li>Monthly salary requirement: Minimum ₹40,000</li>
+                </ul>
+                
+                <p><strong>Read more</strong> about our complete terms and conditions, privacy policy, and loan agreement before applying.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="src/images/main_logo.png" alt="Zepto Logo" class="footer-logo-img">
+                    <img src="src/images/main_logo_text.png" alt="Zepto" class="footer-logo-text">
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📧 support@zepto.com</p>
+                    <p>📞 1800-123-4567</p>
+                    <p>📍 Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <p>© 2024 Zepto. All rights reserved.</p>
+                    <p>Registered with RBI as NBFC</p>
+                    <p>Naman Finlease Private Limited</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
