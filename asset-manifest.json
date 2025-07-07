@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ZeptoGoogleVerificationPage/static/css/main.b5178d1a.css",
+    "main.js": "/ZeptoGoogleVerificationPage/static/js/main.d0c88481.js",
+    "static/js/453.b3085a8a.chunk.js": "/ZeptoGoogleVerificationPage/static/js/453.b3085a8a.chunk.js",
+    "static/media/home_banner.png": "/ZeptoGoogleVerificationPage/static/media/home_banner.b539a7ad566880dfb764.png",
+    "index.html": "/ZeptoGoogleVerificationPage/index.html",
+    "main.b5178d1a.css.map": "/ZeptoGoogleVerificationPage/static/css/main.b5178d1a.css.map",
+    "main.d0c88481.js.map": "/ZeptoGoogleVerificationPage/static/js/main.d0c88481.js.map",
+    "453.b3085a8a.chunk.js.map": "/ZeptoGoogleVerificationPage/static/js/453.b3085a8a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5178d1a.css",
+    "static/js/main.d0c88481.js"
+  ]
+}
