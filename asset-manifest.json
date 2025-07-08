@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ZeptoGoogleVerificationPage/static/css/main.3247b146.css",
-    "main.js": "/ZeptoGoogleVerificationPage/static/js/main.f66cb919.js",
-    "static/js/453.b3085a8a.chunk.js": "/ZeptoGoogleVerificationPage/static/js/453.b3085a8a.chunk.js",
-    "static/media/home_banner.png": "/ZeptoGoogleVerificationPage/static/media/home_banner.b539a7ad566880dfb764.png",
-    "index.html": "/ZeptoGoogleVerificationPage/index.html",
-    "main.3247b146.css.map": "/ZeptoGoogleVerificationPage/static/css/main.3247b146.css.map",
-    "main.f66cb919.js.map": "/ZeptoGoogleVerificationPage/static/js/main.f66cb919.js.map",
-    "453.b3085a8a.chunk.js.map": "/ZeptoGoogleVerificationPage/static/js/453.b3085a8a.chunk.js.map"
+    "main.css": "/zeptoGoogleVerificaion/static/css/main.3247b146.css",
+    "main.js": "/zeptoGoogleVerificaion/static/js/main.6c144606.js",
+    "static/js/453.b3085a8a.chunk.js": "/zeptoGoogleVerificaion/static/js/453.b3085a8a.chunk.js",
+    "static/media/home_banner.png": "/zeptoGoogleVerificaion/static/media/home_banner.b539a7ad566880dfb764.png",
+    "index.html": "/zeptoGoogleVerificaion/index.html",
+    "main.3247b146.css.map": "/zeptoGoogleVerificaion/static/css/main.3247b146.css.map",
+    "main.6c144606.js.map": "/zeptoGoogleVerificaion/static/js/main.6c144606.js.map",
+    "453.b3085a8a.chunk.js.map": "/zeptoGoogleVerificaion/static/js/453.b3085a8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3247b146.css",
-    "static/js/main.f66cb919.js"
+    "static/js/main.6c144606.js"
   ]
 }
